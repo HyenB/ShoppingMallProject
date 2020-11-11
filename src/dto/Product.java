@@ -34,7 +34,7 @@ public class Product implements Serializable {
 	public void setPname(String pname) {
 		this.pname = pname;
 	}
-
+ 
 	public Integer getUnitPrice() {
 		return unitPrice;
 	}

@@ -30,7 +30,7 @@ response.setIntHeader("Refresh", 5);
 Date day = new java.util.Date();
 String am_pm;
 int hour = day.getHours();
-int minute = day.getMinutes();
+int minute = day.getMinutes(); 
 int second = day.getSeconds();
 if (hour <= 12) {
 	am_pm = "AM";
