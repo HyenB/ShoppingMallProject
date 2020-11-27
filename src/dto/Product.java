@@ -8,14 +8,15 @@ public class Product implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private String productId;   //»óÇ° ¾ÆÀÌµğ
-	private String pname;       //»óÇ°¸í
-	private Integer unitPrice;  //»óÇ° °¡°İ
-	private String description; //»óÇ° ¼³¸í
-	private String manufacturer;//Á¦Á¶»ç
-	private String category;    //ºĞ·ù
-	private long unitsInStock;  //Àç°í¼ö
-	private String condition;   //½Å»óÇ° or Áß°íÇ° or Àç»ıÇ°
+	private String productId;   //ìƒí’ˆ ì•„ì´ë””
+	private String pname;       //ìƒí’ˆëª…
+	private Integer unitPrice;  //ìƒí’ˆ ê°€ê²©
+	private String description; //ìƒí’ˆ ì„¤ëª…
+	private String manufacturer;//ì œì¡°ì‚¬
+	private String category;    //ë¶„ë¥˜
+	private long unitsInStock;  //ì¬ê³ ìˆ˜
+	private String condition;   //ì‹ ìƒí’ˆ or ì¤‘ê³ í’ˆ or ì¬ìƒí’ˆ
+	private String filename;    //ì´ë¯¸ì§€ íŒŒì¼ëª…
 	
 	public Product() {
 		super();
@@ -89,6 +90,14 @@ public class Product implements Serializable {
 
 	public void setProductId(String productId) {
 		this.productId = productId;
+	}
+
+	public String getFilename() {
+		return filename;
+	}
+
+	public void setFilename(String filename) {
+		this.filename = filename;
 	}
 
 	
